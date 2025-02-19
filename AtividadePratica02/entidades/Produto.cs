@@ -81,5 +81,7 @@ namespace Entidades
             Peso = ValidaPeso(peso);
         }
     
+        public abstract string ListaProduto ();
+
     }
 }

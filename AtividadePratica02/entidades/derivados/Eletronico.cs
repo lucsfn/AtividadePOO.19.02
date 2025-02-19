@@ -69,5 +69,10 @@ namespace Derivados
             ConsumoDeEnergia = ValidaConsumoDeEnergia(consumoDeEnergia);
         }
 
+        public override string ListaProduto ()
+        {
+            return $"Código: {Codigo}\nNome: {Nome}\nPreço: {Preco}\nDescrição: {Descricao}\nPeso: {Peso}\nMarca: {Marca}\nModelo: {Modelo}\nVoltagem: {Voltagem}\nConsumo de energia: {ConsumoDeEnergia}";
+        }
+
     }
 }
