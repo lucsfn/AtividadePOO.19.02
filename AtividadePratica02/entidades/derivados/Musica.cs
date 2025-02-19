@@ -48,11 +48,11 @@ namespace Derivados
             }
         }
 
-        public Musica (string nome, DateTime dataDeLancamento, string idioma, string autor, string generoMusical, string Letra, TimeOnly duracao) : base (nome, dataDeLancamento, idioma)
+        public Musica (string nome, DateTime dataDeLancamento, string idioma, string autor, string generoMusical, string letra, TimeOnly duracao) : base (nome, dataDeLancamento, idioma)
         {
             Autor = ValidaAutor(autor);
             GeneroMusical = ValidaGeneroMusical(generoMusical);
-            Letra = ValidaLetra(Letra);
+            Letra = ValidaLetra(letra);
             Duracao = duracao;
         }
 
