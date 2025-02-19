@@ -6,9 +6,8 @@ namespace Derivados
     {
         public TimeOnly Duracao { get; set; }
         public string Autor { get; set; }
-        public string Genero { get; set; }
+        public string GeneroCinematografico { get; set; }
         public string Sinopse { get; set; }
-        public string Idioma { get; set; }
         public bool TemDublagem { get; set; }
 
         public string ValidaAutor(string autor)
@@ -24,16 +23,16 @@ namespace Derivados
             }
         }
 
-        public string ValidaGenero(string genero)
+        public string ValidaGeneroCinematografico(string generoCinematografico)
         {
-            if (string.IsNullOrWhiteSpace(genero))
+            if (string.IsNullOrWhiteSpace(generoCinematografico))
             {
                 throw new System.Exception("Gênero inválido.");
             }
 
             else
             {
-                return genero;
+                return generoCinematografico;
             }
         }
 
@@ -63,35 +62,19 @@ namespace Derivados
             }
         }
 
-        public Filme (string nome, DateTime dataDeLancamento, TimeOnly duracao, string autor, string genero, string sinopse, string idioma, bool temDublagem) : base (nome, dataDeLancamento)
+        public Filme (string nome, DateTime dataDeLancamento, string idioma, TimeOnly duracao, string autor, string generoCinematografico, string sinopse, bool temDublagem) : base (nome, dataDeLancamento, idioma)
         {
             Duracao = duracao;
             Autor = ValidaAutor(autor);
-            Genero = ValidaGenero(genero);
+            GeneroCinematografico = ValidaGeneroCinematografico(generoCinematografico);
             Sinopse = ValidaSinopse(sinopse);
-            Idioma = ValidaIdioma(idioma);
             TemDublagem = temDublagem;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        public override string ListaMidia()
+        {
+            return $"Nome: {Nome}\nData de lançamento: {DataDeLancamento}\nDuração: {Duracao}\nAutor: {Autor}\nGênero cinematográfico: {GeneroCinematografico}\nSinopse: {Sinopse}\nIdioma: {Idioma}\nTem dublagem: {TemDublagem}";
+        }
 
     }
 }
