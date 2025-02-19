@@ -61,7 +61,7 @@ namespace Derivados
             }
         }
 
-        public Eletronico(int codigo, string nome, double preco, string descricao, double peso, string marca, string modelo, int voltagem, int consumoDeEnergia) : base (codigo, nome, preco, descricao, peso)
+        public Eletronico(int codigo, string nome, double preco, string descricao, double peso, string marca, string modelo, int voltagem, int consumoDeEnergia) : base(codigo, nome, preco, descricao, peso)
         {
             Marca = ValidaMarca(marca);
             Modelo = ValidaModelo(modelo);
@@ -69,7 +69,7 @@ namespace Derivados
             ConsumoDeEnergia = ValidaConsumoDeEnergia(consumoDeEnergia);
         }
 
-        public override string ListaProduto ()
+        public override string ListaProduto()
         {
             return $"Código: {Codigo}\nNome: {Nome}\nPreço: {Preco}\nDescrição: {Descricao}\nPeso: {Peso}\nMarca: {Marca}\nModelo: {Modelo}\nVoltagem: {Voltagem}\nConsumo de energia: {ConsumoDeEnergia}";
         }
