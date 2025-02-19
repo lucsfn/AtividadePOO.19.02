@@ -47,31 +47,13 @@ namespace Derivados
                 throw new System.Exception("Tipo de câmbio inválido.");
             }
         }
-
-        public bool ValidaPossuiArCondicionado(bool possuiArcondicionado)
-        {
-            if (possuiArcondicionado == true)
-            {
-                return possuiArcondicionado;
-            }
-
-            else if (possuiArcondicionado == false)
-            {
-                return possuiArcondicionado;
-            }
-
-            else
-            {
-                throw new System.Exception("Precisa de refrigeração inválido.");
-            }
-        }
     
         public Carro (string modelo, string marca, string placa, double velocidadeMaxima, double peso, double preco, double consumo, int quantidadeDeRodas, int quantidadeDePortas, string tipoDeCombustivel, char tipoDeCambio, bool possuiArcondicionado) : base (modelo, marca, placa, velocidadeMaxima, peso, preco, consumo, quantidadeDeRodas)
         {
             QuantidadeDePortas = ValidaQuantidadeDePortas(quantidadeDePortas);
             TipoDeCombustivel = ValidaTipoDeCombustivel(tipoDeCombustivel);
             TipoDeCambio = ValidaTipoDeCambio(tipoDeCambio);
-            PossuiArCondicionado = ValidaPossuiArCondicionado(possuiArcondicionado);
+            PossuiArCondicionado = possuiArcondicionado;
         }
     
     }

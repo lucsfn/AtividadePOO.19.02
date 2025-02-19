@@ -48,30 +48,12 @@ namespace Derivados
             }
         }
 
-        public bool ValidaPossuiCarroceria(bool possuiCarroceria)
-        {
-            if (possuiCarroceria == true)
-            {
-                return possuiCarroceria;
-            }
-
-            else if (possuiCarroceria == false)
-            {
-                return possuiCarroceria;
-            }
-
-            else
-            {
-                throw new System.Exception("Valor inválido.");
-            }
-        }
-
         public Caminhao (string modelo, string marca, string placa, double velocidadeMaxima, double peso, double preco, double consumo, int quantidadeDeRodas, int capacidadeCarga, int quantidadeEixos, int comprimento, bool possuiCarroceria) : base (modelo, marca, placa, velocidadeMaxima, peso, preco, consumo, quantidadeDeRodas)
         {
             CapacidadeCarga = ValidaCapacidadeCarga(capacidadeCarga);
             QuantidadeEixos = ValidaQuantidadeEixos(quantidadeEixos);
             Comprimento = ValidaComprimento(comprimento);
-            PossuiCarroceria = ValidaPossuiCarroceria(possuiCarroceria);
+            PossuiCarroceria = possuiCarroceria;
         }
 
     }

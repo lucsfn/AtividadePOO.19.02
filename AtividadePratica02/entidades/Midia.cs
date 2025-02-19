@@ -3,7 +3,6 @@ namespace Entidades
     public abstract class Midia
     {
         public string Nome { get; set; }
-        public string Autor { get; set; }
         public DateTime DataDeLancamento { get; set; }
 
         public string ValidaNome(string nome)
@@ -16,19 +15,6 @@ namespace Entidades
             else
             {
                 return nome;
-            }
-        }
-
-        public string ValidaAutor(string autor)
-        {
-            if (string.IsNullOrWhiteSpace(autor))
-            {
-                throw new System.Exception("Autor inválido.");
-            }
-
-            else
-            {
-                return autor;
             }
         }
 
@@ -45,16 +31,15 @@ namespace Entidades
             }
         }
 
-        public Midia(string nome, string autor, DateTime dataDeLancamento)
+        public Midia(string nome, DateTime dataDeLancamento)
         {
             Nome = ValidaNome(nome);
-            Autor = ValidaAutor(autor);
             DataDeLancamento = ValidaDataDeLancamento(dataDeLancamento);
         }
 
         public virtual string ListaMidia ()
         {
-            return $"Nome: {Nome}\nAutor: {Autor}\nData de lançamento: {DataDeLancamento}";
+            return $"Nome: {Nome}\nData de lançamento: {DataDeLancamento}";
         }
 
     }

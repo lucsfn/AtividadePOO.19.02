@@ -34,24 +34,6 @@ namespace Derivados
             }
         }
 
-        public bool ValidaPrecisaRefrigeracao(bool precisaDeRefrigeracao)
-        {
-            if (precisaDeRefrigeracao == true)
-            {
-                return precisaDeRefrigeracao;
-            }
-
-            else if (precisaDeRefrigeracao == false)
-            {
-                return precisaDeRefrigeracao;
-            }
-
-            else
-            {
-                throw new System.Exception("Precisa de refrigeração inválido.");
-            }
-        }
-
         public Alimento (int codigo, string nome, double preco, string descricao, double peso, DateTime dataValidade, string origem, bool precisaDeRefrigeracao) : base (codigo, nome, preco, descricao, peso)
         {
             DataValidade = dataValidade;

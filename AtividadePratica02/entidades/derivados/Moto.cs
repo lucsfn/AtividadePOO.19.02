@@ -22,24 +22,6 @@ namespace Derivados
             }
         }
 
-        public bool ValidaPossuiPartidaEletrica(bool possuiPartidaEletrica)
-        {
-            if (possuiPartidaEletrica == true)
-            {
-                return possuiPartidaEletrica;
-            }
-
-            else if (possuiPartidaEletrica == false)
-            {
-                return possuiPartidaEletrica;
-            }
-
-            else
-            {
-                throw new System.Exception("Valor inválido.");
-            }
-        }
-
         public string ValidaTipoDeMoto(string tipoDeMoto)
         {
             if (string.IsNullOrWhiteSpace(tipoDeMoto))
@@ -69,7 +51,7 @@ namespace Derivados
         public Moto (string modelo, string marca, string placa, double velocidadeMaxima, double peso, double preco, double consumo, int quantidadeDeRodas, int cilindradas, bool possuiPartidaEletrica, string tipoDeMoto, int quantidadeDeMarchas) : base (modelo, marca, placa, velocidadeMaxima, peso, preco, consumo, quantidadeDeRodas)
         {
             Cilindradas = ValidaCilindradas(cilindradas);
-            PossuiPartidaEletrica = ValidaPossuiPartidaEletrica(possuiPartidaEletrica);
+            PossuiPartidaEletrica = possuiPartidaEletrica;
             TipoDeMoto = ValidaTipoDeMoto(tipoDeMoto);
             QuantidadeDeMarchas = ValidaQuantidadeDeMarchas(quantidadeDeMarchas);
         }
