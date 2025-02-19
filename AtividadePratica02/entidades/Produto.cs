@@ -6,6 +6,7 @@ namespace Entidades
         public string Nome {get ; set ;}
         public double Preco {get ; set ;}
         public string Descricao {get ; set ;}
+        public double Peso {get; set ;}
 
         public int ValidaCodigo (int codigo)
         {
@@ -58,13 +59,26 @@ namespace Entidades
                 return descricao;
             }
         }
-    
-        public Produto (int codigo, string nome, double preco, string descricao)
+
+        public double ValidaPeso (double peso)
+        {
+            if (peso < 0)
+            {
+                throw new System.Exception("Peso inválido.");
+            }
+
+            else
+            {
+                return peso;
+            }
+        }
+        public Produto (int codigo, string nome, double preco, string descricao, double peso)
         {
             Codigo = ValidaCodigo(codigo);
             Nome = ValidaNome(nome);
             Preco = ValidPreco(preco);
             Descricao = ValidaDescricao(descricao);
+            Peso = ValidaPeso(peso);
         }
     
     }
