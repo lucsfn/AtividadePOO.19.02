@@ -115,6 +115,18 @@ namespace Entidades
             }
         }
 
+        public Veiculo (string modelo, string marca, string placa, double velocidadeMaxima, double peso, double preco, double consumo, int quantidadeDeRodas)
+        {
+            Modelo = ValidaModelo(modelo);
+            Marca = ValidaMarca(marca);
+            Placa = ValidaPlaca(placa);
+            VelocidadeMaxima = ValidaVelocidadeMaxima(velocidadeMaxima);
+            Peso = ValidaPeso(peso);
+            Preco = ValidaPreco(preco);
+            Consumo = ValidaConsumo(consumo);
+            QuantidadeDeRodas = ValidaQuantidadeDeRodas(quantidadeDeRodas);
+        }
+
         public virtual string InformacoesVeiculo ()
         {
             return $"Modelo: {Modelo}\nMarca: {Marca}\nPlaca: {Placa}\nVelocidade Máxima: {VelocidadeMaxima}\nPeso: {Peso}\nPreço: {Preco}\nConsumo: {Consumo}\nQuantidade de Rodas: {QuantidadeDeRodas}";

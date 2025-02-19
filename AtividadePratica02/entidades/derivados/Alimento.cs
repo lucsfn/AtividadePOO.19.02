@@ -6,7 +6,7 @@ namespace Derivados
     {
         public DateTime DataValidade { get; set; }
         public string Origem { get; set; }
-        public bool PrecisaRefrigeracao { get; set; }
+        public bool PrecisaDeRefrigeracao { get; set; }
 
         public DateTime ValidaDataValidade(DateTime dataValidade)
         {
@@ -34,16 +34,16 @@ namespace Derivados
             }
         }
 
-        public bool ValidaPrecisaRefrigeracao(bool precisaRefrigeracao)
+        public bool ValidaPrecisaRefrigeracao(bool precisaDeRefrigeracao)
         {
-            if (precisaRefrigeracao == true)
+            if (precisaDeRefrigeracao == true)
             {
-                return precisaRefrigeracao;
+                return precisaDeRefrigeracao;
             }
 
-            else if (precisaRefrigeracao == false)
+            else if (precisaDeRefrigeracao == false)
             {
-                return precisaRefrigeracao;
+                return precisaDeRefrigeracao;
             }
 
             else
@@ -52,16 +52,16 @@ namespace Derivados
             }
         }
 
-        public Alimento (int codigo, string nome, double preco, string descricao, double peso, DateTime dataValidade, string origem, bool precisaRefrigeracao) : base (codigo, nome, preco, descricao, peso)
+        public Alimento (int codigo, string nome, double preco, string descricao, double peso, DateTime dataValidade, string origem, bool precisaDeRefrigeracao) : base (codigo, nome, preco, descricao, peso)
         {
             DataValidade = dataValidade;
             Origem = origem;
-            PrecisaRefrigeracao = precisaRefrigeracao;
+            PrecisaDeRefrigeracao = precisaDeRefrigeracao;
         }
 
         public override string ListaProduto()
         {
-            return $"Código: {Codigo}\nNome: {Nome}\nPreço: {Preco}\nDescrição: {Descricao}\nPeso: {Peso}\nData de validade: {DataValidade}\nOrigem: {Origem}\nPrecisa de refrigeração: {PrecisaRefrigeracao}";
+            return $"Código: {Codigo}\nNome: {Nome}\nPreço: {Preco}\nDescrição: {Descricao}\nPeso: {Peso}\nData de validade: {DataValidade}\nOrigem: {Origem}\nPrecisa de refrigeração: {PrecisaDeRefrigeracao}";
         }
 
     }
