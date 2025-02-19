@@ -72,7 +72,7 @@ namespace Entidades
                 return peso;
             }
         }
-        
+
         public Produto(int codigo, string nome, double preco, string descricao, double peso)
         {
             Codigo = ValidaCodigo(codigo);
@@ -82,7 +82,10 @@ namespace Entidades
             Peso = ValidaPeso(peso);
         }
 
-        public abstract string ListaProduto();
+        public virtual string ListaProduto ()
+        {
+            return $"Código: {Codigo}\nNome: {Nome}\nPreço: {Preco}\nDescrição: {Descricao}\nPeso: {Peso}";
+        }
 
     }
 }
