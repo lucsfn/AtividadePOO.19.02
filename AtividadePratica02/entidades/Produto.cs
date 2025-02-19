@@ -72,6 +72,7 @@ namespace Entidades
                 return peso;
             }
         }
+        
         public Produto(int codigo, string nome, double preco, string descricao, double peso)
         {
             Codigo = ValidaCodigo(codigo);
