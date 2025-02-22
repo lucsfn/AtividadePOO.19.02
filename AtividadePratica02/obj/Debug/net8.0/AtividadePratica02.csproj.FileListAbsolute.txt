@@ -1,0 +1,15 @@
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\bin\Debug\net8.0\AtividadePratica02.exe
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\bin\Debug\net8.0\AtividadePratica02.deps.json
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\bin\Debug\net8.0\AtividadePratica02.runtimeconfig.json
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\bin\Debug\net8.0\AtividadePratica02.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\bin\Debug\net8.0\AtividadePratica02.pdb
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.sourcelink.json
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\refint\AtividadePratica02.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.pdb
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\AtividadePratica02.genruntimeconfig.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade_21_02_2025\AtividadePratica02\obj\Debug\net8.0\ref\AtividadePratica02.dll
